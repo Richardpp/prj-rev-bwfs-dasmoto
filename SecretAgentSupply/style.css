@@ -1,16 +1,23 @@
+html {
+  font-size: 18px;
+  font-family: Helvetica;
+}
+
 .company {
     background-color: black;
     color: white;
+    padding: 0.66rem;
+
+}
+
+.company span {
+  font-size: 1rem;
 }
 
 div {
     display: block;
 }
 
-@media only screen and (max-width: 1024px)
-body {
-    font-size: 16px;
-}
 
 body {
     font-family: Helvetica, sans-serif;
@@ -24,7 +31,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 25em;
+    height: 25rem;
 }
 
 nav {
@@ -35,25 +42,13 @@ nav {
 nav ul {
     align-items: center;
     justify-content: space-between;
-    padding: 0.75em 0;
+    padding: 0.75rem 0;
     list-style: none;
     display: flex;
 }
 
-ul, menu, dir {
-    display: block;
-    list-style-type: disc;
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    -webkit-padding-start: 40px;
-}
 
-@media only screen and (max-width: 1024px)
-nav ul {
-    display: none;
-}
+
 
 
 li {
@@ -74,11 +69,15 @@ article, aside, footer, header, hgroup, main, nav, section {
     margin: 0 auto;
 }
 
+
+
+
 footer {
     background-color: black;
     color: white;
-    padding: 5em 0;
-    margin-top: 4em;
+    padding: 5rem 0;
+    text-align: left;
+    margin-top: 4rem;
 }
 
 span {
@@ -88,10 +87,17 @@ span {
 .headline {
     background-color: black;
     color: white;
-    width: 20em;
-    padding: 2em 3em;
+    width: 20rem;
+    padding: 2rem 3rem;
     position: relative;
-    top: 9em;
+    top: 9rem;
+}
+
+.headline h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.2em;
+    margin: 0.25rem 0;
 }
 
 h1, h4 {
@@ -105,21 +111,13 @@ h4 {
     -webkit-margin-end: 0px;
 }
 
-.headline h1 {
-    font-size: 2em;
-    line-height: 1.2em;
-    margin: 0.25em 0;
-}
 
-.company .container {
-    display: flex;
-    align-items: center;
-    padding: 12px 0 12px 0.5em;
-}
+
 
 .company img {
     height: 1.5em;
-    padding-right: 15px;
+    padding-right: 1rem;
+    padding-left: 0.5rem;
 }
 
 img {
@@ -129,24 +127,27 @@ img {
 .products, .business-info {
     display: flex;
     justify-content: space-between;
-    margin: 3em 0 0 0;
+    margin: 3rem 0 0 0;
 }
 
 .product {
     width: 30%;
+
 }
 
 .product-image {
     border: 4px solid black;
-    padding: 2em 0;
-    height: 9em;
+    padding: 2rem 0;
+    height: 9rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .product-image img {
-    max-width: 8em;
+    max-width: 9rem;
+
+
 }
 
 .description {
@@ -154,27 +155,57 @@ img {
     background-color: black;
     color: white;
     text-align: center;
-    padding: 0.5em;
+    padding: 0.5rem;
 }
 
-@media only screen and (max-width: 1024px)
 
-.product.glasses {
-    display: none;
+
+
+
+
+nav ul {
+  display: none;
+}
 }
 
-@media only screen and (max-width: 1024px)
+
+
+@media only screen and (min-width: 1024px){
+.mobile-nav {
+      display: none;
+}}
+
+@media only screen and (max-width: 1024px){
+
+body {
+      font-size: 16px;
+  }
 .mobile-nav {
     display: block;
     text-align: center;
 }
-
-.mobile-nav {
+nav ul {
     display: none;
 }
+.product.glasses {
+    display: none;
+}
+.product {
+  width: 47%;
+}
+}
+
+@media only screen and (max-width: 470px){
+
+
+}
+}
+
+
 
 .info {
     width: 35%;
+
 }
 
 .info span {
@@ -185,5 +216,6 @@ img {
     display: block;
     background-color: black;
     color: white;
-    padding: 1em 2em;
+    padding: 1rem 2rem;
+
 }
