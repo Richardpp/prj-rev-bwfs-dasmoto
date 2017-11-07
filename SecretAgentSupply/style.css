@@ -3,6 +3,21 @@ html {
   font-family: Helvetica;
 }
 
+body {
+    font-family: Helvetica, sans-serif;
+    display: block;
+    margin: 0;
+}
+
+div {
+    display: block;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
 .company {
     background-color: black;
     color: white;
@@ -14,16 +29,14 @@ html {
   font-size: 1rem;
 }
 
-div {
-    display: block;
+.company img {
+    height: 1.5em;
+    padding-right: 1rem;
+    padding-left: 0.5rem;
 }
 
-
-body {
-    font-family: Helvetica, sans-serif;
-    line-height: 1.4em;
-    display: block;
-    margin: 0;
+img {
+    border-style: none;
 }
 
 .main-banner {
@@ -32,6 +45,27 @@ body {
     background-position: center;
     background-size: cover;
     height: 25rem;
+}
+
+.headline {
+    background-color: black;
+    color: white;
+    width: 20rem;
+    padding: 2rem 3rem;
+    position: relative;
+    top: 9rem;
+}
+
+.headline h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0.25rem 0;
+}
+
+.headline h4 {
+
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 nav {
@@ -47,81 +81,17 @@ nav ul {
     display: flex;
 }
 
-
-
-
-
 li {
     display: list-item;
     text-align: -webkit-match-parent;
-}
-
-article, aside, footer, header, nav, section {
-    display: block;
-}
-
-article, aside, footer, header, hgroup, main, nav, section {
-    display: block;
-}
-
-.container {
-    max-width: 960px;
-    margin: 0 auto;
-}
-
-
-
-
-footer {
-    background-color: black;
-    color: white;
-    padding: 5rem 0;
-    text-align: left;
-    margin-top: 4rem;
 }
 
 span {
   color: white;
 }
 
-.headline {
-    background-color: black;
-    color: white;
-    width: 20rem;
-    padding: 2rem 3rem;
-    position: relative;
-    top: 9rem;
-}
-
-.headline h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    line-height: 1.2em;
-    margin: 0.25rem 0;
-}
-
-h1, h4 {
-    font-weight: bold;
-}
-h4 {
+article, aside, footer, header, hgroup, main, nav, section {
     display: block;
-    -webkit-margin-before: 1.33em;
-    -webkit-margin-after: 1.33em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-}
-
-
-
-
-.company img {
-    height: 1.5em;
-    padding-right: 1rem;
-    padding-left: 0.5rem;
-}
-
-img {
-    border-style: none;
 }
 
 .products, .business-info {
@@ -158,16 +128,30 @@ img {
     padding: 0.5rem;
 }
 
+.info {
+    width: 35%;
 
-
-
-
-
-nav ul {
-  display: none;
-}
 }
 
+.info span {
+  color: black;
+}
+
+.info .title {
+    display: block;
+    background-color: black;
+    color: white;
+    padding: 1rem 2rem;
+
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 5rem 0;
+    text-align: left;
+    margin-top: 4rem;
+}
 
 
 @media only screen and (min-width: 1024px){
@@ -196,26 +180,13 @@ nav ul {
 }
 
 @media only screen and (max-width: 470px){
-
-
-}
-}
-
-
-
-.info {
-    width: 35%;
-
-}
-
-.info span {
-  color: black;
-}
-
-.info .title {
-    display: block;
-    background-color: black;
-    color: white;
-    padding: 1rem 2rem;
-
+.main-banner {height: 15rem;}
+.headline {padding: 1rem 2rem; top: 10rem;}
+.headline h1 {font-size: 0.77rem;}
+.headline h4 {font-size: 1rem;}
+.product {width: 90%;}
+.product.watch {display: none;}
+.info {width: 90%; margin: 0.5rem 0}
+footer {text-align: center;}
+.products, .business-info {flex-wrap: wrap;}
 }
